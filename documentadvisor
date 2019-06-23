@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>FEE</title>
+<script>
+var fval1 = fval2  = 0;
+	
+function compute1(value)
+{
+fval1 = value;
+}
+
+function compute2(value)
+{
+fval2 = value;
+}
+
+
+
+function finalComputation()
+{
+var value  = fval1 +fval2;
+
+alert("The required documents are  : " + value);
+}
+
+</script>
+</head>
+<body>
+<center>
+<body background="doc.jpg">
+<font color="#e74c3c " size="17"><b><u><i>DOCUMENT ADVISOR</i></u></b></font>
+</center>
+
+
+
+<font color="#1a9ade " size="7">
+<center>
+
+<form action="">
+<b><u>TYPE OF APPLICATION :</u></b> <i><input type="radio" name="text" value="NORMAL" onclick="compute1('ageproof,');"> NORMAL</i>
+<i><input type="radio" name="text" value="TATKAL" onclick="compute1('age proof,');"> TATKAL</i>
+
+</form>
+
+
+<font color="#8e44ad   " size="7">
+<center>
+
+<form action="">
+<b><u>APPLICATION CATEOGRY :</u></b> <i><input type="radio" name="age" value="MINOR" onclick="compute2('addressproof');"> MINOR </i>
+<i><input type="radio" name="age" value="ADULT" onclick="compute2('aadhar card');"> ADULT</i>
+<i><input type="radio" name="age" value="SENIOR CITIZEN" onclick="compute2('voter id');"> SENIOR CITIZEN</i>
+</form>
+
+
+<form action="/action_page.php" method="get">
+<button type="reset" value="RESET">RESET</button>
+</form>
+
+<a href="police1.php" onclick="finalComputation();">SUBMIT</a>
+<a href="psk.php"><font color="black">NEXT</a>
+</body>
+</html>
