@@ -1,0 +1,198 @@
+<html>
+<head>
+<title>Table Align Demo</title>
+<script type="text/javascript">
+function ValidateForm()
+{
+var nameBox = document.getElementById ("name");
+
+if (nameBox.value.length == 0)
+{
+alert ("Enter name.");
+return false;
+}
+var re = /^\w+(?:\s\w+){0,3}$/;
+
+if (!nameBox.value.match (re))
+{
+alert ("Invalid name.");
+return false;
+}
+
+var pwBox = document.getElementById ("password");
+
+if (pwBox.value.length < 6)
+{
+alert ("Password is too short.");
+return false;
+}
+
+if (pwBox.value.length > 16)
+{
+alert ("Password is too long.");
+return false;
+}
+
+// 6-16 non-white character
+re = /^\S{6,16}$/;
+
+if (!pwBox.value.match (re))
+{
+alert ("Invalid password.");
+return false;
+}
+
+var pwBox = document.getElementById ("confirm password");
+
+if (pwBox.value.length < 6)
+{
+alert ("Confirm Password is too short.");
+return false;
+}
+
+if (pwBox.value.length > 16)
+{
+alert ("Confirm Password is too long.");
+return false;
+}
+
+// 6-16 non-white character
+re = /^\S{6,16}$/;
+
+if (!pwBox.value.match (re))
+{
+alert ("Invalid confirm password.");
+return false;
+}
+
+// Telephone may be empty or only 7-16 digits
+re = /^\d{7,16}$/;
+
+var telBox = document.getElementById ("telephone");
+
+if (telBox.value.length > 0)
+{
+if (!telBox.value.match (re))
+{
+alert ("Invalid telephone number.");
+return false;
+}
+}
+
+// regular expression pattern of email:
+// valid patterns:
+// name@organ.com
+// name.another@organ-ex.com
+// name-another@organ-ex.com
+// name+another@organ-ex.com
+// name+another@organ-ex.another-organ.com
+re = /^\w+([\.\-\+]\w+)*@\w+(\-\w+)*\.\w+(\-\w+)*(\.\w+(\-\w+)*)*$/;
+
+var emailBox = document.getElementById ("email ");
+
+if (!emailBox.value.match (re))
+{
+alert ("Invalid email address: " + emailBox.value);
+return false;
+}
+var maleBox = document.getElementById ("male");
+var femaleBox = document.getElementById ("female");
+
+if(!maleBox.checked && !femaleBox.checked)
+{
+alert ("Specify gender");
+return false;
+}
+
+return true;
+}
+
+</script>
+
+</head>
+<body background="passport.jpg">
+<h1> <center><font color="red" size="10">PASSPORT APPLICATION  FORM</font></center> </h1>
+<form method="POST" action="insert.php">
+<table style="width: 400px;">
+<tr>
+<td style="width: 35%;">
+<center>
+<center><font color="blue" size="6"><i>NAME:</i></font>
+</td>
+<td style="width: 65%;">
+<input id="name" type="text" name="name" maxlength="52" />
+</td>
+</tr>
+<tr>
+<td style="width: 35%;">
+<center>
+<font color="blue" size="6"><i> PASSWORD:</i></font>
+</td>
+<td style="width: 65%;">
+<input id="password" type="password" name=" password" maxlength="16" />
+</td>
+</tr>
+<tr>
+<td style="width: 35%;">
+<center>
+<font color="blue" size="6"> <i>CONFIRM PASSWORD:</i></font>
+</td>
+<td style="width: 65%;">
+<input id="confirm password" type="password" name="confirm_password" maxlength="16" />
+</td>
+</tr>
+<tr>
+<td style="width: 35%;">
+<center>
+
+<font color="blue" size="6"><i>E-MAIL :</i></font>
+</td>
+<td style="width: 65%;">
+<input id="email " type="text" name="email" maxlength="2048" />
+</td>
+</tr>
+<tr>
+<td style="width: 35%;">
+<center>
+<font color="blue" size="6"><i>LOGIN ID:</i></font>
+</td>
+<td style="width: 65%;">
+<input id="login id" type="text" name="login_id" maxlength="2048" />
+</td>
+</tr>
+<tr>
+<td style="width: 35%;">
+<center>
+<font color="blue" size="6"><i>TELEPHONE:</i></font>
+</td>
+<td style="width: 65%;">
+<input id="telephone" type="text" name="telephone" maxlength="16" />
+</td>
+</tr>
+<tr>
+<td style="width: 35%;">
+<center>
+<font color="blue" size="6"><i>GENDER:</i></font>
+</td>
+<td style="width: 65%;">
+<b><i><font color="e711a6" size="6"> <input id="male" type="radio" value="Male" name="gender" />Male </font></i></b> <br>
+<b><i><font color="e711a6" size="6">  <input id="female" type="radio" value="Female" name="gender" />Female</font></i></b>
+</td>
+</tr>
+<tr>
+<td colspan="2" style="width: 100%;">
+</center>
+
+<a href="ak.html">
+<center>  <font color="blue" size="6"><input type="submit" value="SUBMIT" onclick="return ValidateForm() /></font>
+<input type="reset" value="RESET"></td></tr></table></center>
+</center>
+
+</td>
+</tr>
+</table>
+</form>
+<center>
+<a href="ak.html "><font size="6">BACK</font></a>
+</body>
+</html>
