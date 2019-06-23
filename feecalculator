@@ -1,0 +1,85 @@
+<html>
+<head>
+<title>FEE</title>
+<script>
+var fval1 = fval2 = fval3 = fval4 = 0;
+
+function compute1(value)
+{
+fval1 = value;
+}
+
+function compute2(value)
+{
+fval2 = value;
+}
+
+function compute3(value)
+{
+fval3 = value;
+}
+
+function compute4(value)
+{
+fval4 = value;
+}
+
+function finalComputation()
+{
+var value  = fval1 + fval2 + fval3 + fval4;
+
+alert("The FEE is : " + value);
+}
+
+</script>
+</head>
+<body>
+<center>
+<body background="34251849-man-makes-calculations-with-a-calculator-3d-image-white-background-.jpg">
+<font color="#e74c3c " size="17"><b><u><i>FEE CALCULATION</i></u></b></font>
+</center>
+
+
+
+<font color="#1a9ade " size="7">
+<center>
+
+<form action="">
+<b><u>APPLICANT AGE :</u></b> <i><input type="radio" name="age" value="less than 15" onclick="compute1(10);"> Less than 15</i>
+<i><input type="radio" name="age" value="15-18" onclick="compute1(20);"> 15-18</i>
+<i><input type="radio" name="age" value="above 18" onclick="compute1(30);"> Above 18</i>
+</form>
+
+
+<font color="#8e44ad   " size="7">
+<center>
+
+<form action="">
+<b><u>SCHEME :</u></b> <i><input type="radio" name="age" value="NORMAL" onclick="compute2(10);"> Normal </i>
+<i><input type="radio" name="age" value="TATKAL" onclick="compute2(20);"> Tatkal</i>
+</form>
+
+
+<font color="1a9ade " size="7">
+<center>
+<form action="">
+<b><u>VALIDATION :</u></b> <i><input type="radio" name="age" value="5 yrs" onclick="compute3(10);"> 5 yrs </i>
+<i><input type="radio" name="age" value="10 yrs" onclick="compute3(20);"> 10 yrs</i>
+</form>
+
+
+<font color="#d35400    " size="7">
+<center>
+<form action="">
+<b> <u>NO.OF PAGES:</u></b><i><input type="radio" name="age" value="36" onclick="compute4(10);"> 36 </i>
+<i><input type="radio" name="age" value="60" onclick="compute4(20);"> 60</i>
+</form>
+
+<form action="/action_page.php" method="get">
+<button type="reset" value="RESET">RESET</button>
+</form>
+
+<a href="#" onclick="finalComputation();">SUBMIT</a>
+<a href="passport appln form.html"><font color="black">BACK</a>
+</body>
+</html>
