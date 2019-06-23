@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<center>
+<h1>PASSPORT SEVA KENDRA</h1>
+</head>
+<style>
+div
+{
+font-size: 150%;
+color:teal;
+}
+h1{
+color:yellow;
+}
+body{
+background:url("appointment.jpg")no-repeat;
+background-size:105% 300%;
+}
+</style>
+<body background="#">
+<div>
+<form action="/action_page.php">
+Select the required date:
+<input type="date" name="day">
+</form>
+<br><br>
+<form action="/action_page.php">
+Select the required office
+<select name="office">
+<b> <option value="annanagar">Annanagar</option> </b>
+<b><option value="tnagar">T.Nagar</option> </b>
+<b><option value="adyar">Adyar</option> </b>
+<b><option value="kodambakkam">Kodambakkam</option> </b>
+</select>
+<br><br>
+<a href="psk(1).php"> submit </a>
+</div>
+</center>
+</form>
+</body>
+</html>
