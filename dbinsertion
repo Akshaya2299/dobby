@@ -1,0 +1,33 @@
+<?php
+$con=mysqli_connect('localhost','root','','police');
+?>
+INSERT:
+<?php
+include("connect.php");
+$f1=$f2=$f3=$f4=$f5=$f6=$f7=" ";
+if($_SERVER['REQUEST_METHOD']=="POST")
+{
+$f1=$_POST["name"];
+$f2=$_POST["password"];
+$f3=$_POST["confirm_password"];
+$f4=$_POST["email"];
+$f5=$_POST["login_id"];
+$f6=$_POST["telephone"];
+$f7=$_POST["gender"];
+$query= "INSERT INTO register(NAME,PASSWORD,CONFIRM_PASSWORD,EMAIL_ID,LOGIN_ID,TELEPHONE,GENDER) VALUES
+('$f1','$f2','$f3','$f4','$f5','$f6','$f7');";
+echo $query;
+if(mysqli_query($con,$query))
+{
+$f1=$f2=$f3=$f4=$f5=$f6=$f7=" ";
+header("location:login.html");
+echo "INSERTED";
+}
+else
+{
+echo "ERROR<br>";
+var_dump($con);
+}
+
+}
+?>
