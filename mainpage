@@ -1,0 +1,94 @@
+<html>
+<head>
+<title>Home page</title>
+<style>
+body
+{
+<body background="pass_1498.jpg">
+background-repeat: no-repeat;
+background-position: left bottom;
+}
+* {
+box-sizing: border-box;
+}
+/* Style the top navigation bar */
+.topnav {
+overflow: hidden;
+background-color: #333;
+}
+/* Style the topnav links */
+.topnav a {
+float: left;
+display: block;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+/* Change color on hover */
+.topnav a:hover {
+background-color: #ddd;
+color: black;
+}
+/* Create three equal columns that floats next to each other */
+.column {
+float: left;
+width: 33.33%;
+padding: 15px;
+}
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+/* colour buttons*/
+.btn {
+border: none;
+color: white;
+padding: 20px 40px;
+font-size: 16px;
+cursor: pointer;
+}
+/* seperate class for each button*/
+.existing {
+background-color: green;
+}
+.new {
+background-color: blue;
+}
+.help {
+background-color: red;
+}
+</style>
+</head>
+<body>
+<center> <body background="passporttravel1.png"> </center>
+<img src="pass_1498.jpg" width="200" height="100">
+<div class="topnav">
+<a href="ak.html">Home</a>
+<a href="fee.html">Fee Calculator</a>
+<a href="doc.html">Document Advisor</a>
+<a href="psk(1).php">Passport Seva Kendra</a>
+<a href="police1.php">Police verification</a>
+</div>
+<marquee bgcolor="teal">New tatkal scheme launched | More than 100 operational post offices in the country | New police m-app launched| 40 lakh students from 1000 institutions benefitted from the Passport student connect scheme |Benefitting citizens applying for a passport by streamlinig,liberalising and easing out the process of passport issurance</marquee>
+<div class="row">
+<div class="column">
+<a href= "login.html">
+<button class="btn existing" type="submit" value="login.html">Existing user</button>
+</div>
+<div class="column">
+<a href= "form.html">
+<button class="btn new">New user</button>
+</div>
+<div class="column">
+<a href= "contact us.html">
+<button class="btn help">Contact Us</button>
+</div>
+</div>
+<iframe src="slideshow.html" align="right" width="500" height="200"></iframe>
+<footer>
+</footer>
+</body>
+</html>
